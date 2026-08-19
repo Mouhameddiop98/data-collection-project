@@ -225,19 +225,8 @@ def render_home():
             "- [Gaaraas Dakar](https://www.gaaraas.com/petites-annonces-voitures) "
         )
 
-    st.divider()
-    st.subheader("📌 Sélectionner la source de travail")
-    col1, col2 = st.columns(2)
-    with col1:
-        if "source" not in st.session_state:
-            st.session_state["source"] = "Books to Scrape"
-            st.rerun()
-     
+   
     
-    with col2:
-        if st.button("🚗 Vehicles Dakar Data", use_container_width=True):
-            st.session_state["source"] = "Gaaraas (véhicules)"
-            st.rerun()
 
 
 # ----------------------------------------------------------------------------
