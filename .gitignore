@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+data/app.db
+.streamlit/secrets.toml
+data/raw/books_no_code.csv
+data/raw/gaaraas_no_code.csv
