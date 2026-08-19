@@ -229,9 +229,11 @@ def render_home():
     st.subheader("📌 Sélectionner la source de travail")
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("📚 Catalog Books Data", use_container_width=True):
+        if "source" not in st.session_state:
             st.session_state["source"] = "Books to Scrape"
             st.rerun()
+     
+    
     with col2:
         if st.button("🚗 Vehicles Dakar Data", use_container_width=True):
             st.session_state["source"] = "Gaaraas (véhicules)"
